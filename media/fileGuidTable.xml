@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+	<files>
+		<path>media/clothing/clothingItems/Bag_SurvivorBag_Deluxe.xml</path>
+		<guid>db002371-8643-4f75-960b-339ca8510a7d</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_SurvivorBag_Deluxe_RHand.xml</path>
+		<guid>471bf65c-10d6-461a-94aa-658c97d64941</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_SurvivorBag_Deluxe_LHand.xml</path>
+		<guid>7532510e-5d5b-408d-82f9-d1d4cce11e27</guid>
+	</files>
+</fileGuidTable>
