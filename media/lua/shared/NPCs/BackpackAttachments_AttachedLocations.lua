@@ -4,11 +4,6 @@
 
 local group = AttachedLocations.getGroup("Human")
 
-group:getOrCreateLocation("Schoolbag Gear"):setAttachmentName("schoolbag_gear")
-group:getOrCreateLocation("Schoolbag Canteen"):setAttachmentName("schoolbag_canteen")
-group:getOrCreateLocation("Schoolbag Walkie"):setAttachmentName("schoolbag_walkie")
-group:getOrCreateLocation("Schoolbag Bottle"):setAttachmentName("schoolbag_bottle")
-group:getOrCreateLocation("Schoolbag Gas"):setAttachmentName("schoolbag_gas")
 group:getOrCreateLocation("Hikingbag Gear"):setAttachmentName("hikingbag_gear")
 group:getOrCreateLocation("Hikingbag Canteen"):setAttachmentName("hikingbag_canteen")
 group:getOrCreateLocation("Hikingbag Walkie"):setAttachmentName("hikingbag_walkie")
@@ -21,6 +16,14 @@ group:getOrCreateLocation("Hikingbag Left Tool2"):setAttachmentName("hikingbag_l
 group:getOrCreateLocation("Hikingbag Left Tool3"):setAttachmentName("hikingbag_left_tool3")
 group:getOrCreateLocation("Hikingbag Left Walkie"):setAttachmentName("hikingbag_left_walkie")
 group:getOrCreateLocation("Hikingbag Left Bottle"):setAttachmentName("hikingbag_left_bottle")
+group:getOrCreateLocation("Hikingbag Right Gear"):setAttachmentName("hikingbag_right_gear")
+group:getOrCreateLocation("Hikingbag Right Canteen"):setAttachmentName("hikingbag_right_canteen")
+group:getOrCreateLocation("Hikingbag Right Tool1"):setAttachmentName("hikingbag_right_tool1")
+group:getOrCreateLocation("Hikingbag Right Tool2"):setAttachmentName("hikingbag_right_tool2")
+group:getOrCreateLocation("Hikingbag Right Tool3"):setAttachmentName("hikingbag_right_tool3")
+group:getOrCreateLocation("Hikingbag Right Walkie"):setAttachmentName("hikingbag_right_walkie")
+group:getOrCreateLocation("Hikingbag Right Bottle"):setAttachmentName("hikingbag_right_bottle")
+
 group:getOrCreateLocation("ALICEpack Gear"):setAttachmentName("alicepack_gear")
 group:getOrCreateLocation("ALICEpack Canteen"):setAttachmentName("alicepack_canteen")
 group:getOrCreateLocation("ALICEpack Walkie"):setAttachmentName("alicepack_walkie")

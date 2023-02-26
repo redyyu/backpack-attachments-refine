@@ -1,27 +1,7 @@
 module Base
 {
-    recipe Make Survivor Backpack {
-	    Bag_ALICEpack/Bag_ALICEpack_Army,
-	    LeatherStrips/LeatherStripsDirty=3,
-	    Thread=3, 
-        DuctTape/Scotchtape=3,
-        PaintBlack,
-        keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
-        keep Needle,
 
-        Result: Bag_SurvivorBag_Deluxe,
-        Time: 1200.0,
-      	SkillRequired: Tailoring=6,
-        OnTest: Recipe.OnTest.IsEmptyBag,
-
-        AnimNode: RipSheets,
-        Sound: ClothesRipping,
-        Prop1: Source=1,
-        Prop2: Source=2,
-        Category: Survivalist,
-    }
-
-	recipe Upgrade Hiking Bag {
+    recipe Upgrade Hiking Bag {
         Bag_NormalHikingBag,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
         keep Needle,
@@ -31,8 +11,10 @@ module Base
         
         Result: Bag_NormalHikingBag_Plus,
         Time: 300.0,
-      	SkillRequired: Tailoring=3,
-    	OnCreate: Recipe.OnCreate.RestoreBagItems,
+        SkillRequired: Tailoring=3,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -47,6 +29,8 @@ module Base
         Result: Bag_NormalHikingBag,
         Time: 300.0,
         SkillRequired: Tailoring=4,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
@@ -56,18 +40,20 @@ module Base
         Category: Survivalist,
     }
 
-	recipe Upgrade Big Hiking Bag {
-	    Bag_BigHikingBag,
+    recipe Upgrade Big Hiking Bag {
+        Bag_BigHikingBag,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
         keep Needle,
-	    LeatherStrips/LeatherStripsDirty=2,
-	    Thread=2, 
+        LeatherStrips/LeatherStripsDirty=2,
+        Thread=2, 
         DuctTape/Scotchtape=2,
  
         Result: Bag_BigHikingBag_Plus,
         Time: 600.0,
-      	SkillRequired: Tailoring=4,
-    	OnCreate: Recipe.OnCreate.RestoreBagItems,
+        SkillRequired: Tailoring=4,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -82,6 +68,8 @@ module Base
         Result: Bag_BigHikingBag,
         Time: 600.0,
         SkillRequired: Tailoring=4,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
@@ -91,17 +79,19 @@ module Base
         Category: Survivalist,
     }
 
-	recipe Upgrade Large Backpack {
+    recipe Upgrade Large Backpack {
         Bag_ALICEpack,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
         keep Needle,
         LeatherStrips/LeatherStripsDirty=3,
-	    Thread=3, 
+        Thread=3, 
         DuctTape/Scotchtape=3,
         
         Result: Bag_ALICEpack_Plus,
         Time: 900.0,
         SkillRequired: Tailoring=5,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
@@ -117,6 +107,8 @@ module Base
         Result: Bag_ALICEpack,
         Time: 900.0,
         SkillRequired: Tailoring=5,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
@@ -126,18 +118,20 @@ module Base
         Category: Survivalist,
     }
 
-	recipe Upgrade Military Backpack {
-	    Bag_ALICEpack_Army,
+    recipe Upgrade Military Backpack {
+        Bag_ALICEpack_Army,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
         keep Needle,
-	    LeatherStrips/LeatherStripsDirty=3,
-	    Thread=3, 
+        LeatherStrips/LeatherStripsDirty=3,
+        Thread=3, 
         DuctTape/Scotchtape=3,
         
-        Result:Bag_ALICEpack_Army_Plus,
-        Time:900.0,
-      	SkillRequired:Tailoring=5,
-    	OnCreate: Recipe.OnCreate.RestoreBagItems,
+        Result: Bag_ALICEpack_Army_Plus,
+        Time: 900.0,
+        SkillRequired: Tailoring=5,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -147,13 +141,15 @@ module Base
     }
 
     recipe Remove Military Backpack Attachments {
-	    Bag_ALICEpack_Army_Plus/Bag_ALICEpack_Army_WithAttachment/Bag_ALICEpack_Army_With2Attachments/Bag_ALICEpack_Army_With3Attachments,
+        Bag_ALICEpack_Army_Plus/Bag_ALICEpack_Army_WithAttachment/Bag_ALICEpack_Army_With2Attachments/Bag_ALICEpack_Army_With3Attachments,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
 
         Result: Bag_ALICEpack_Army,
         Time: 900.0,
-      	SkillRequired: Tailoring=3,
-    	OnCreate: Recipe.OnCreate.RestoreBagItems,
+        SkillRequired: Tailoring=3,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -162,4 +158,44 @@ module Base
         Category: Survivalist,
     }
 
+
+    recipe Upgrade Survivor Bag {
+        Bag_SurvivorBag,
+        keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
+        keep Needle,
+        LeatherStrips/LeatherStripsDirty=3,
+        Thread=3, 
+        DuctTape/Scotchtape=3,
+        
+        Result: Bag_SurvivorBag_Plus,
+        Time:900.0,
+        SkillRequired:Tailoring=5,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
+
+        AnimNode: RipSheets,
+        Sound: ClothesRipping,
+        Prop1: Source=1,
+        Prop2: Source=2,
+        Category: Survivalist,
+    }
+
+    recipe Remove Survivor Bag Attachments {
+        Bag_SurvivorBag_Plus/Bag_SurvivorBag_WithAttachment/Bag_SurvivorBag_With2Attachments/Bag_SurvivorBag_With3Attachments,
+        keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
+
+        Result: Bag_SurvivorBag,
+        Time: 900.0,
+        SkillRequired: Tailoring=3,
+
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
+
+        AnimNode: RipSheets,
+        Sound: ClothesRipping,
+        Prop1: Source=1,
+        Prop2: Source=2,
+        Category: Survivalist,
+    }
 }

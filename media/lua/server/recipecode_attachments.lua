@@ -1,23 +1,34 @@
+require "TimedActions/ISAttachItemHotbar"
+
+
 function Recipe.OnCreate.RestoreBagItems(item, resultItem, player)
 
 	local player_Inventory = player:getInventory();
+	local hotbar = getPlayerHotbar(player:getPlayerNum());
+	local is_equipped = false;
 	local transferred_Items = {}; 
 	local dItem;
-	local texture
+	local texture;
 	
 	for i = 0, (item:size()-1) do 
 		dItem = item:get(i); 
-		if dItem:getCategory() == "Container" then 
-			texture = dItem:getTexture()
-			if player:getClothingItem_Back() == dItem then 
-				player:setClothingItem_Back(nil);
-			end
-			if player:getPrimaryHandItem() == dItem then 
-				player:setPrimaryHandItem(nil);
-			end
-			if player:getSecondaryHandItem() == dItem then 
-				player:setSecondaryHandItem(nil); 
-			end
+		if instanceof(dItem, "InventoryContainer") then 
+			texture = dItem:getTexture();
+			-- DO NOT need those. 
+			-- player:getClothingItem_Back() already be nil. (others either)
+
+			-- if player:getClothingItem_Back() == dItem then 
+			-- 	player:setClothingItem_Back(nil);
+			-- 	is_equipped = true;
+			-- end
+			-- if player:getPrimaryHandItem() == dItem then 
+			-- 	player:setPrimaryHandItem(nil);
+			-- 	is_equipped = true;
+			-- end
+			-- if player:getSecondaryHandItem() == dItem then 
+			-- 	player:setSecondaryHandItem(nil);
+			-- 	is_equipped = true;
+			-- end
 			dInv = dItem:getInventory(); 
 			newInv= resultItem:getInventory(); 
 			dInvItems = dInv:getItems(); 
@@ -30,17 +41,30 @@ function Recipe.OnCreate.RestoreBagItems(item, resultItem, player)
 		end
 	end
 	
-	for i3, k3 in ipairs(transferred_Items) do
-		dInv:Remove(k3); 
-		newInv:AddItem(k3); 
+	for _, v in ipairs(transferred_Items) do
+		dInv:Remove(v); 
+		newInv:AddItem(v); 
 	end
-	resultItem:setTexture(texture)
+	resultItem:setTexture(texture);
+
+	-- hotbar:refresh(); 
+	-- It's work, but no need anymore.
+	-- Not allowed to working on bag is equipped.
+
 end
 
 
 function Recipe.OnTest.IsEmptyBag(item)
-    if item:getCategory() == "Container" then
+    if instanceof(item, "InventoryContainer") then
         return item:getInventory():getItems():size() < 1;
+    end
+    return true
+end
+
+
+function Recipe.OnTest.IsEquippedBag(item)
+    if instanceof(item, "InventoryContainer") then
+        return not item:isEquipped();
     end
     return true
 end

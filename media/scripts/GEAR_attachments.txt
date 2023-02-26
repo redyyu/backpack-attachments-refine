@@ -142,45 +142,46 @@ module Base
 
 		attachment hikingbag_right_gear
 		{
-			offset = 0.0300 0.0900 -0.0000,
-			rotate = 0.0000 -5.0000 90.0000,
+			offset = 0.0300 -0.0900 -0.0000,
+			rotate = 0.0000 5.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
-
+	
 		attachment hikingbag_right_tool1
 		{
-			offset = 0.0300 0.1000 -0.1000,
-			rotate = 90.0000 -5.0000 0.0000,
+			offset = 0.0300 -0.1000 -0.1000,
+			rotate = 90.0000 5.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
-
+	
 		attachment hikingbag_right_tool2
 		{
-			offset = 0.0300 0.1000 0.1000,
-			rotate = 270.0000 -5.0000 0.0000,
+			offset = 0.0300 -0.1000 0.1000,
+			rotate = 270.0000 5.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
-
+	
 		attachment hikingbag_right_tool3
 		{
-			offset = 0.0300 0.1000 0.0500,
-			rotate = -90.0000 -90.0000 0.0000,
+			offset = 0.0300 -0.1000 0.0500,
+			rotate = -90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment hikingbag_right_walkie
 		{
-			offset = 0.0300 0.0900 -0.0000,
-			rotate = 95.0000 -90.0000 -5.0000,
+			offset = 0.0300 -0.0900 -0.0000,
+			rotate = 95.0000 90.0000 -5.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment hikingbag_right_bottle
 		{
-			offset = 0.0300 0.0920 -0.0000,
-			rotate = 95.0000 90.0000 5.0000,
+			offset = 0.0300 -0.0920 -0.0000,
+			rotate = 95.0000 270.0000 5.0000,
 			bone = Bip01_BackPack,
 		}
+
 
 		attachment alicepack_gear
 		{
@@ -444,45 +445,46 @@ module Base
 
 		attachment hikingbag_right_gear
 		{
-			offset = 0.0300 0.0900 -0.0000,
-			rotate = 0.0000 -5.0000 90.0000,
+			offset = 0.0300 -0.0900 -0.0000,
+			rotate = 0.0000 5.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
-
+	
 		attachment hikingbag_right_tool1
 		{
-			offset = 0.0300 0.1000 -0.1000,
-			rotate = 90.0000 -5.0000 0.0000,
+			offset = 0.0300 -0.1000 -0.1000,
+			rotate = 90.0000 5.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
-
+	
 		attachment hikingbag_right_tool2
 		{
-			offset = 0.0300 0.1000 0.1000,
-			rotate = 270.0000 -5.0000 0.0000,
+			offset = 0.0300 -0.1000 0.1000,
+			rotate = 270.0000 5.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
-
+	
 		attachment hikingbag_right_tool3
 		{
-			offset = 0.0300 0.1000 0.0500,
-			rotate = -90.0000 -90.0000 0.0000,
+			offset = 0.0300 -0.1000 0.0500,
+			rotate = -90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment hikingbag_right_walkie
 		{
-			offset = 0.0300 0.0900 -0.0000,
-			rotate = 95.0000 -90.0000 -5.0000,
+			offset = 0.0300 -0.0900 -0.0000,
+			rotate = 95.0000 90.0000 -5.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment hikingbag_right_bottle
 		{
-			offset = 0.0300 0.0920 -0.0000,
-			rotate = 95.0000 90.0000 5.0000,
+			offset = 0.0300 -0.0920 -0.0000,
+			rotate = 95.0000 270.0000 5.0000,
 			bone = Bip01_BackPack,
 		}
+
 
 		attachment alicepack_gear
 		{
