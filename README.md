@@ -2,6 +2,9 @@
 
 Refine MOD:Backpack Attachments
 
+Make it simple.
+
+
 Only `Hiking Bag`, `Big Hiking Bag`, `Large Backpack`, `Military Backpack` could have Attachments Point.
 
 - `Hiking Bag`: 1 Point
