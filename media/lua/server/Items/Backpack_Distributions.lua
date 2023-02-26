@@ -13,11 +13,11 @@ local function insertTable(table_obj, key, weight)
     end
 end 
 
-insertTable(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"], "Bag_SurvivorBag_Deluxe", 3);
-insertTable(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"], "Bag_SurvivorBag_Deluxe", 3);
-insertTable(VehicleDistributions["SurvivalistTruckBed"], "Bag_SurvivorBag_Deluxe", 3);
-insertTable(VehicleDistributions["SurvivalistGlovebox"], "Bag_SurvivorBag_Deluxe", 2.5);
-insertTable(ProceduralDistributions.list["SurvivalGear"], "Bag_SurvivorBag_Deluxe", 4);
+insertTable(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"], "Bag_SurvivorBag_Plus", 3);
+insertTable(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"], "Bag_SurvivorBag_Plus", 3);
+insertTable(VehicleDistributions["SurvivalistTruckBed"], "Bag_SurvivorBag_Plus", 3);
+insertTable(VehicleDistributions["SurvivalistGlovebox"], "Bag_SurvivorBag_Plus", 2.5);
+insertTable(ProceduralDistributions.list["SurvivalGear"], "Bag_SurvivorBag_Plus", 4);
 
 
 insertTable(ProceduralDistributions.list["FirearmWeapons"], "Bag_ALICEpack_Army_Plus", 1);
