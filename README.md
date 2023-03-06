@@ -16,5 +16,4 @@ Allow to remove attachment from Crafting Panel.
 
 ### Survivor Backpack
 
-Add back Survivor Backpack (which is hidden by vanilla), and change the texture to be Black.
-The Survivor Backpack have 3 attachment points, and they can not be remove.
+Change the Survivor Backpack texture to be Black.
