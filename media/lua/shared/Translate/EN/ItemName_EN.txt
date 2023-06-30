@@ -1,3 +1,4 @@
 UI_EN = {
     ItemName_Base.Bag_SurvivorBag = "Survivor Bag",
+    ItemName_Base.Bag_Military = "Military Duffel Bag",
 }

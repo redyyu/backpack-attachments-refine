@@ -1,0 +1,46 @@
+module Base
+{
+
+    /* Override Bags */
+
+    item Bag_MedicalBag {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Trauma Bag,
+        ClothingItem = Bag_MedicalBag,
+        CanBeEquipped = Back,
+        WeightReduction	= 75,
+        Weight = 1,
+        Capacity = 20,
+        Icon = DuffelbagMedical,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_DuffelBag_LHandMedical holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DuffelBag_RHandMedical holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+    }
+
+    item Bag_Military {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Military Duffel Bag,
+        ClothingItem = Bag_Military,
+        CanBeEquipped = Back,
+        WeightReduction	= 75,
+        Weight = 1,
+        Capacity = 22,
+        Icon = DuffelbagMilitary,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_DuffelBag_LHandMilitary holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DuffelBag_RHandMilitary holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+    }
+
+}
