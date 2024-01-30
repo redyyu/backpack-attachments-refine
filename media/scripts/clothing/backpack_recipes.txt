@@ -14,7 +14,7 @@ module Base
         SkillRequired: Tailoring=3,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsWithTexture,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -31,7 +31,7 @@ module Base
         SkillRequired: Tailoring=4,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsWithTexture,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -53,7 +53,7 @@ module Base
         SkillRequired: Tailoring=4,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsWithTexture,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -70,7 +70,7 @@ module Base
         SkillRequired: Tailoring=4,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsWithTexture,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -92,7 +92,7 @@ module Base
         SkillRequired: Tailoring=5,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -109,7 +109,7 @@ module Base
         SkillRequired: Tailoring=5,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -131,7 +131,7 @@ module Base
         SkillRequired: Tailoring=5,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -149,7 +149,7 @@ module Base
         SkillRequired: Tailoring=3,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -172,7 +172,7 @@ module Base
         SkillRequired: Tailoring=5,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -190,7 +190,7 @@ module Base
         SkillRequired: Tailoring=3,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -212,7 +212,7 @@ module Base
         SkillRequired:Tailoring=5,
         
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -230,7 +230,7 @@ module Base
         SkillRequired: Tailoring=3,
 
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Sound: ClothesRipping,
@@ -250,6 +250,7 @@ module Base
         CanBeDoneFromFloor: true,
  
         OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Prop1: Source=1,
@@ -269,6 +270,7 @@ module Base
         CanBeDoneFromFloor: true,
  
         OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
         Prop1: Source=1,
