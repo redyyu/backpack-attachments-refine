@@ -247,9 +247,9 @@ module Base
         Result: Bag_ALICEpack_Army_Night,
         Time: 900.0,
         SkillRequired: Tailoring=2,
+        CanBeDoneFromFloor: true,
  
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
         Prop1: Source=1,
@@ -266,9 +266,9 @@ module Base
         Result: Bag_SurvivorBag,
         Time: 900.0,
         SkillRequired: Tailoring=2,
+        CanBeDoneFromFloor: true,
  
         OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
 
         AnimNode: RipSheets,
         Prop1: Source=1,
