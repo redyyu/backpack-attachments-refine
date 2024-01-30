@@ -158,25 +158,6 @@ module Base
         Category: Survivalist,
     }
 
-    recipe Paint Military Backpack Night {
-        Bag_ALICEpack_Army,
-        keep Paintbrush,
-        LatexCatsuitNude,
-        PaintBlack,
-        
-        Result: Bag_ALICEpack_Army_Night,
-        Time: 900.0,
-        SkillRequired: Tailoring=2,
- 
-        OnTest: Recipe.OnTest.IsEquippedBag,
-        OnCreate: Recipe.OnCreate.RestoreBagItems,
-
-        AnimNode: RipSheets,
-        Prop1: Source=1,
-        Prop2: Source=2,
-        Sound: Painting,
-        Category: Survivalist,
-    }
 
     recipe Upgrade Military Backpack Night {
         Bag_ALICEpack_Army_Night,
@@ -255,6 +236,44 @@ module Base
         Sound: ClothesRipping,
         Prop1: Source=1,
         Prop2: Source=2,
+        Category: Survivalist,
+    }
+
+    recipe Paint Military Backpack Night {
+        Bag_ALICEpack_Army,
+        keep Paintbrush,
+        PaintBlack,
+        
+        Result: Bag_ALICEpack_Army_Night,
+        Time: 900.0,
+        SkillRequired: Tailoring=2,
+ 
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
+
+        AnimNode: RipSheets,
+        Prop1: Source=1,
+        Prop2: Source=2,
+        Sound: Painting,
+        Category: Survivalist,
+    }
+
+    recipe Paint Survivor Bag {
+        Bag_ALICEpack,
+        keep Paintbrush,
+        PaintBlack,
+        
+        Result: Bag_SurvivorBag,
+        Time: 900.0,
+        SkillRequired: Tailoring=2,
+ 
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
+
+        AnimNode: RipSheets,
+        Prop1: Source=1,
+        Prop2: Source=2,
+        Sound: Painting,
         Category: Survivalist,
     }
 }
