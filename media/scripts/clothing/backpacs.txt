@@ -88,6 +88,50 @@ module Base
     }
 
 
+    item Bag_ALICEpack_Army_Night {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Military Backpack Night,
+        ClothingItem = Bag_ALICEpack_Army_Night,
+        CanBeEquipped = Back,
+        WeightReduction = 87,
+        Weight = 2,
+        Capacity = 28,
+        Icon = AliceBag_Camo,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_Night_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_Night_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
+    }
+
+    item Bag_ALICEpack_Army_Night_Plus {
+        Type = Container,
+        DisplayName = Military Backpack Night with Attachment Points,
+        ClothingItem = Bag_ALICEpack_Army_Night,
+        CanBeEquipped = Back,
+        WeightReduction = 87,
+        Weight = 2,
+        Capacity= 28,
+        Icon = AliceBag_Camo_Dark,
+        OpenSound =  OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        AttachmentsProvided = ALICEpackLeft;ALICEpack;ALICEpackRight,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_Night_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_Night_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
+    }
+
     item Bag_SurvivorBag {
         DisplayCategory = Bag,
         Type = Container,

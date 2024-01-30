@@ -23,7 +23,7 @@ module Base
         Category: Survivalist,
     }
     recipe Remove Hiking Bag Attachment {
-        Bag_NormalHikingBag_Plus/Bag_NormalHikingBag_WithAttachment/Bag_NormalHikingBag_With2Attachments,
+        Bag_NormalHikingBag_Plus,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
 
         Result: Bag_NormalHikingBag,
@@ -62,7 +62,7 @@ module Base
         Category: Survivalist,
     }
     recipe Remove Big Hiking Bag Attachments {
-        Bag_BigHikingBag_Plus/Bag_BigHikingBag_WithAttachment/Bag_BigHikingBag_With2Attachments,
+        Bag_BigHikingBag_Plus,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
 
         Result: Bag_BigHikingBag,
@@ -101,7 +101,7 @@ module Base
         Category: Survivalist,
     }
     recipe Remove Large Backpack Attachments {
-        Bag_ALICEpack_Plus/Bag_ALICEpack_WithAttachment/Bag_ALICEpack_With2Attachments/Bag_ALICEpack_With3Attachments/Bag_SurvivorBag_WithAttachment/Bag_SurvivorBag_With2Attachments/Bag_SurvivorBag_With3Attachments,
+        Bag_ALICEpack_Plus,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
 
         Result: Bag_ALICEpack,
@@ -141,7 +141,7 @@ module Base
     }
 
     recipe Remove Military Backpack Attachments {
-        Bag_ALICEpack_Army_Plus/Bag_ALICEpack_Army_WithAttachment/Bag_ALICEpack_Army_With2Attachments/Bag_ALICEpack_Army_With3Attachments,
+        Bag_ALICEpack_Army_Plus,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
 
         Result: Bag_ALICEpack_Army,
@@ -158,6 +158,65 @@ module Base
         Category: Survivalist,
     }
 
+    recipe Paint Military Backpack Night {
+        Bag_ALICEpack_Army,
+        keep Paintbrush,
+        LatexCatsuitNude,
+        PaintBlack,
+        
+        Result: Bag_ALICEpack_Army_Night,
+        Time: 900.0,
+        SkillRequired: Tailoring=2,
+ 
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
+
+        AnimNode: RipSheets,
+        Prop1: Source=1,
+        Prop2: Source=2,
+        Sound: Painting,
+        Category: Survivalist,
+    }
+
+    recipe Upgrade Military Backpack Night {
+        Bag_ALICEpack_Army_Night,
+        keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
+        keep Needle,
+        LeatherStrips/LeatherStripsDirty=3,
+        Thread=3, 
+        DuctTape/Scotchtape=3,
+        
+        Result: Bag_ALICEpack_Army_Night_Plus,
+        Time: 900.0,
+        SkillRequired: Tailoring=5,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
+
+        AnimNode: RipSheets,
+        Sound: ClothesRipping,
+        Prop1: Source=1,
+        Prop2: Source=2,
+        Category: Survivalist,
+    }
+
+    recipe Remove Military Backpack Night Attachments {
+        Bag_ALICEpack_Army_Night_Plus,
+        keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
+
+        Result: Bag_ALICEpack_Army_Night,
+        Time: 900.0,
+        SkillRequired: Tailoring=3,
+        
+        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnCreate: Recipe.OnCreate.RestoreBagItems,
+
+        AnimNode: RipSheets,
+        Sound: ClothesRipping,
+        Prop1: Source=1,
+        Prop2: Source=2,
+        Category: Survivalist,
+    }
 
     recipe Upgrade Survivor Bag {
         Bag_SurvivorBag,
@@ -182,7 +241,7 @@ module Base
     }
 
     recipe Remove Survivor Bag Attachments {
-        Bag_SurvivorBag_Plus/Bag_SurvivorBag_WithAttachment/Bag_SurvivorBag_With2Attachments/Bag_SurvivorBag_With3Attachments,
+        Bag_SurvivorBag_Plus,
         keep [Recipe.GetItemTypes.SharpKnife]/Scissors,
 
         Result: Bag_SurvivorBag,

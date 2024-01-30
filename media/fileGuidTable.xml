@@ -12,4 +12,16 @@
 		<path>media/clothing/clothingItems/Bag_SurvivorBag_LHand.xml</path>
 		<guid>7532510e-5d5b-408d-82f9-d1d4cce11e27</guid>
 	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_ALICEpack_Army_Night.xml</path>
+		<guid>dafea097-4bbe-410a-9cb8-6a6778757f16</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_ALICEpack_Army_Night_RHand.xml</path>
+		<guid>be6c7ae3-a9a8-4b84-9ecd-b8ba0772adfe</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_ALICEpack_Army_Night_LHand.xml</path>
+		<guid>86d94ab0-8a00-49eb-b26d-d4f2126cc80a</guid>
+	</files>
 </fileGuidTable>
