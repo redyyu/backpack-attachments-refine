@@ -42,3 +42,8 @@ insertTable(ProceduralDistributions.list["WardrobeWomanClassy"], "Bag_BigHikingB
 insertTable(ProceduralDistributions.list["WardrobeMan"], "Bag_BigHikingBag_Plus", 0.05);
 insertTable(ProceduralDistributions.list["WardrobeWoman"], "Bag_BigHikingBag_Plus", 0.06);
 insertTable(ProceduralDistributions.list["WardrobeRedneck"], "Bag_BigHikingBag_Plus", 0.06);
+
+
+SuburbsDistributions["Bag_SurvivorBag_Plus"] = SuburbsDistributions["Bag_SurvivorBag"]
+SuburbsDistributions["Bag_ALICEpack_Army_Plus"] = SuburbsDistributions["Bag_ALICEpack_Army"]
+SuburbsDistributions["Bag_ALICEpack_Plus"] = SuburbsDistributions["Bag_ALICEpack"]
