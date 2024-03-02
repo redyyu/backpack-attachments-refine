@@ -106,7 +106,7 @@ function Recipe.OnTest.IsEmptyBag(item)
 end
 
 
-function Recipe.OnTest.IsEquippedBag(item)
+function Recipe.OnTest.IsNotEquippedBag(item)
     if instanceof(item, "InventoryContainer") then
         return not item:isEquipped();
     end

@@ -13,7 +13,7 @@ module Base
         Time: 300.0,
         SkillRequired: Tailoring=3,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsWithTexture,
 
         AnimNode: RipSheets,
@@ -30,7 +30,7 @@ module Base
         Time: 300.0,
         SkillRequired: Tailoring=4,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsWithTexture,
 
         AnimNode: RipSheets,
@@ -52,7 +52,7 @@ module Base
         Time: 600.0,
         SkillRequired: Tailoring=4,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsWithTexture,
 
         AnimNode: RipSheets,
@@ -69,7 +69,7 @@ module Base
         Time: 600.0,
         SkillRequired: Tailoring=4,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsWithTexture,
 
         AnimNode: RipSheets,
@@ -91,7 +91,7 @@ module Base
         Time: 900.0,
         SkillRequired: Tailoring=5,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
@@ -106,9 +106,9 @@ module Base
 
         Result: Bag_ALICEpack,
         Time: 900.0,
-        SkillRequired: Tailoring=5,
+        SkillRequired: Tailoring=3,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
@@ -130,7 +130,7 @@ module Base
         Time: 900.0,
         SkillRequired: Tailoring=5,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
@@ -148,7 +148,7 @@ module Base
         Time: 900.0,
         SkillRequired: Tailoring=3,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
@@ -171,7 +171,7 @@ module Base
         Time: 900.0,
         SkillRequired: Tailoring=5,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
@@ -189,7 +189,7 @@ module Base
         Time: 900.0,
         SkillRequired: Tailoring=3,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
@@ -211,7 +211,7 @@ module Base
         Time:900.0,
         SkillRequired:Tailoring=5,
         
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
@@ -229,7 +229,7 @@ module Base
         Time: 900.0,
         SkillRequired: Tailoring=3,
 
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
@@ -249,7 +249,7 @@ module Base
         SkillRequired: Tailoring=2,
         CanBeDoneFromFloor: true,
  
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
@@ -269,7 +269,7 @@ module Base
         SkillRequired: Tailoring=2,
         CanBeDoneFromFloor: true,
  
-        OnTest: Recipe.OnTest.IsEquippedBag,
+        OnTest: Recipe.OnTest.IsNotEquippedBag,
         OnCreate: Recipe.OnCreate.RestoreBagItemsOnly,
 
         AnimNode: RipSheets,
